@@ -4,21 +4,21 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
-  // background: linear-gradient(to bottom, var(--color-black), #8400ff42);
-  position: relative; /* Important for pseudo-element positioning */
-  overflow: hidden; /* Ensures pseudo-element stays contained */
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, black, transparent);
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/bg-image.jpg');
+    background: url("/jaipur.webp");
     background-size: cover;
     background-position: center;
-    filter: brightness(0.25); /* Adjust brightness here */
-    z-index: -1; /* Push the pseudo-element behind the content */
+    filter: brightness(0.85);
+    z-index: -1;
   }
   h4 {
     backdrop-filter: blur(20px);
@@ -29,26 +29,12 @@
 
   h1 {
     background: linear-gradient(
-      45deg,
-      var(--color-tertary),
-      rgb(204,54,42),
-      rgb(0, 0, 0)
+      to right,
+      var(--color-tertary) 20%,
+      transparent 50%
     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 64px rgba(204, 53, 42, 0.295);
-  }
-  .ribbon {
-    background-color: var(--color-primary);
-    transform: rotate(-2deg);
-    border: none;
-    // width: 500% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    margin-block: 44px;
-    overflow-x: hidden !important;
+    color: var(--color-primary) !important;
+    width: max-content !important;
   }
 }
 .coming-soon-header {
@@ -58,7 +44,7 @@
   top: 0;
   background-color: transparent !important;
   z-index: 999;
-  backdrop-filter: blur(24px);
+  // backdrop-filter: blur(24px);
 }
 .coming-soon-footer {
   margin: auto;
@@ -67,7 +53,10 @@
   bottom: 0;
   background-color: transparent !important;
   z-index: 999;
-  backdrop-filter: blur(24px);
+  // backdrop-filter: blur(24px);
+}
+.coming-soon-hero {
+  // backdrop-filter: blur(24px);
 }
 .icons {
   display: flex;

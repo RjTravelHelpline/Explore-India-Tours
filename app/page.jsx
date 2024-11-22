@@ -27,7 +27,7 @@ const page = () => {
       </div>
       <div className="container-fluid home-land">
         <div className="container ">
-          <div className="row d-flex justify-content-center align-items-center">
+          <div className="row d-flex justify-content-center align-items-center flex-column">
             <motion.h4
               className="text-center text-white p-3 rounded-5 w-auto mb-4 fw-normal text-capitalize "
               style={{ border: '1px solid var(--color-gray)' }}
@@ -35,10 +35,10 @@ const page = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <GoNorthStar className='color-tertary mx-2' />crafting <strong>something delightful</strong> for you! <GoNorthStar className='color-tertary mx-2' />
+              <GoNorthStar className='color-tertary mx-2' />crafting <strong>something delightful</strong> for you <GoNorthStar className='color-tertary mx-2' />
             </motion.h4>
             <motion.h1
-              className="mb-3 fw-bold text-center text-uppercase"
+              className="mb-3 fw-bold text-center text-uppercase w-auto"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -51,17 +51,8 @@ const page = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Get Ready for an <strong>exclusive experience</strong>!
+              Get Ready for an <strong>exclusive experience</strong>
             </motion.h3>
-            <motion.p
-              className="text-center color-border"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              Reach Out to Us for further Assistance
-            </motion.p>
-
             <div className="py-2 d-flex justify-content-center align-items-center flex-wrap gap-2">
               <motion.a
                 href='https://rajasthantourpackages.in/'
